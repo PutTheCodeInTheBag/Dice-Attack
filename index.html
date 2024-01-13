@@ -3,15 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style href="styles/menu.css" rel="stylesheet"></style>
     <script src="scripts/menu.js" defer></script>
     <title>Dice Attack</title>
 </head>
 <body>
 
+    <!-- Main menu layer -->
+
     <div id="main_menu">
-        
+        <div id="main_button_group">
+            <button id="new_game_button" onclick="newGame()">Nova Partida</button>
+            <button id="load_game_button" onclick="loadSaves()">Carregar Aventura</button>
+            <button id="stats_button" onclick="loadStats()">Estatísticas</button>
+        </div>
+
+        <div id="extras_button_group">
+            <button id="achievements_button" onclick="openAchievements()"></button>
+            <button id="upgrades_button" onclick="openAchievements()"></button>
+            <button id="configurations_button" onclick="openAchievements()"></button>
+        </div>
+
+        <link rel="stylesheet" href="styles/menu.css">
     </div>
-    
+
+    <!-- Game creation layer -->
+
+    <div id="game_creation">
+        <input id="name_input" type="text">
+    </div>
+ 
 </body>
 </html>
